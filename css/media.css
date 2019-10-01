@@ -1,0 +1,132 @@
+@media screen and (max-width:1100px) {
+    .overLay {
+
+        width: 75%;
+    }
+    .overLay h3 {
+        position: absolute;
+        color: white;
+        font-family: cursive;
+        margin: 200px 0px;
+        border: 5px solid white;
+        padding: 50px;
+        max-width: 100%;
+        -webkit-transform: skew(-25deg);
+        transform: skew(-25deg);
+        right: 20%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .overLay {
+        width: 85%;
+    }
+    .overLay h3 {
+        margin-left: 250px;
+
+    }
+}
+
+@media screen and (max-width:760px) {
+    .overLay {
+        width: 95%;
+    }
+    .overLay h3 {
+        margin-left: 250px;
+
+    }
+}
+
+@media screen and (max-width:550px) {
+    .overLay {
+        width: 95%;
+    }
+    .overLay h3 {
+        margin-left: 300px;
+
+    }
+}
+
+
+@media screen and (max-width:511px) {
+    .overLay {
+        background: ;
+        min-width: 100%;
+        overflow: visible
+    }
+    .overLay h3 {
+
+        min-width: 80%;
+        left: -12%;
+
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .overLay {
+        background: ;
+        min-width: 100%;
+        overflow: visible
+    }
+    .overLay h3 {
+
+        min-width: 80%;
+        left: -12%;
+
+
+    }
+    .box,
+    .boxTwo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .overLay h3 {
+
+        min-width: 80%;
+        left: -25%;
+
+
+    }
+
+}
+
+@media screen and (max-width:318px) {
+
+    .overLay h3 {
+
+        min-width: 80%;
+        left: -40%;
+
+
+    }
+
+}
+
+/* Code For Row image responsive  for all project */
+
+@media screen and (max-width:768px) {
+    .divContainer {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .divContainer {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .address h4 {
+        text-align: center
+    }
+    .address {
+        height: 100px;
+    }
+}

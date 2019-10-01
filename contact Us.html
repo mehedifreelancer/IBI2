@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>IBI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/stick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="border-radius: 50%;" class="img-responsive" href="#"><img class="img-responsive" src="img/IBI.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li style="background:#d88603 "><a class="active" href="registerCertificate.html">Register</a></li>
+            </ul>
+
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<section id="contact" class="wow fadeIn">
+   <div class="contactForm">
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                   <h2>Contact</h2>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+                   <form id="contact-form" class="form" action="#" method="POST" role="form">
+                       <div class="form-group">
+                           <label class="form-label" for="name">Your Name</label>
+                           <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+                       </div>
+                       <div class="form-group">
+                           <label class="form-label" for="email">Your Email</label>
+                           <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+                       </div>
+                       <div class="form-group">
+                           <label class="form-label" for="subject">Subject</label>
+                           <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+                       </div>
+                       <div class="form-group">
+                           <label class="form-label" for="message">Message</label>
+                           <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
+                       </div>
+                       <div class="text-center">
+                           <button type="submit" class="btn btn-start-order">Send Message</button>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+
+<!--<section class="footer ">-->
+<!--    <div class="conatiner ">-->
+<!--        <div class="socialMedia text-center ">-->
+<!--            <a href=" " class="fa fa-twitter "></a>-->
+<!--            <a href=" " class="fa fa-instagram "></a>-->
+<!--            <a href=" " class="fa fa-linkedin "></a>-->
+<!--        </div>-->
+<!--        <div class="bootomMenu text-center ">-->
+<!--            <a href="#Home" class=" ">Home</a>-->
+<!--            <a href="#about" class=" ">About</a>-->
+<!--            <a href="#sample" class=" ">Sample</a>-->
+<!--            <a href="#question" class=" ">T & C</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<script src="js/jquery3.1.1.min.js " type="text/javascript "></script>
+<script src="js/bootstrap.min.js " type="text/javascript "></script>
+<script src="js/wow.min.js " type="text/javascript "></script>
+<script src="js/clickScroll.js" type="text/javascript"></script>
+<script>new WOW().init();</script>
+<script src="js/slick.min.js" type="application/javascript"></script>
+<script src="js/myJs.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function() {
+
+
+        // Test for placeholder support
+        $.support.placeholder = (function(){
+            var i = document.createElement('input');
+            return 'placeholder' in i;
+        })();
+
+        // Hide labels by default if placeholders are supported
+        if($.support.placeholder) {
+            $('.form-label').each(function(){
+                $(this).addClass('js-hide-label');
+            });
+
+            // Code for adding/removing classes here
+            $('.form-group').find('input, textarea').on('keyup blur focus', function(e){
+
+                // Cache our selectors
+                var $this = $(this),
+                    $label = $this.parent().find("label");
+
+                switch(e.type) {
+                    case 'keyup': {
+                        $label.toggleClass('js-hide-label', $this.val() == '');
+                    } break;
+                    case 'blur': {
+                        if( $this.val() == '' ) {
+                            $label.addClass('js-hide-label');
+                        } else {
+                            $label.removeClass('js-hide-label').addClass('js-unhighlight-label');
+                        }
+                    } break;
+                    case 'focus': {
+                        if( $this.val() !== '' ) {
+                            $label.removeClass('js-unhighlight-label');
+                        }
+                    } break;
+                    default: break;
+                }
+                // previous implementation with ifs
+                /*if (e.type == 'keyup') {
+                    if( $this.val() == '' ) {
+                        $parent.addClass('js-hide-label');
+                    } else {
+                        $parent.removeClass('js-hide-label');
+                    }
+                }
+                else if (e.type == 'blur') {
+                    if( $this.val() == '' ) {
+                        $parent.addClass('js-hide-label');
+                    }
+                    else {
+                        $parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
+                    }
+                }
+                else if (e.type == 'focus') {
+                    if( $this.val() !== '' ) {
+                        $parent.removeClass('js-unhighlight-label');
+                    }
+                }*/
+            });
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
+
+<!--<div data-wow-delay="1s" class="span3 wow bounceInDown center" style="visibility: visible; animation-delay: 1s; animation-name: bounceInDown;"><img src="img/grumpy.gif" height="200"></div>-->
