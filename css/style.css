@@ -32,7 +32,7 @@ iframe {
 
 .navbar-default {
     background: rgba(0,25,79,.8);
-    background: linear-gradient(to right, #d88603,rgba(216,134,3,.9),rgba(0,25,79,.8),rgba(0,25,79,.9),#00194f,#00194f,#00194f);
+    background: linear-gradient(to right, #d88603,#00194f,#00194f,#00194f);
     border: #00194f;
     border-radius: 0px;
 
@@ -43,6 +43,7 @@ iframe {
     -webkit-transition: .5s;
     transition: .5s;
     font-family: cursive;
+    padding: 13px 20px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -101,9 +102,11 @@ iframe {
     overflow: hidden;
 }
 
-
-
+.overLay h2{
+   color: white;
 }
+
+
 
 .box {
     position: absolute;
@@ -283,6 +286,11 @@ iframe {
 .btn-warning .btn-xs{
     border-radius:none;
 }
+.btn-warning{
+    background: #d88603;
+    border-radius:0px;
+    border: #d88603;
+}
 .fa-check-circle{
     color: green;
 }
@@ -426,12 +434,7 @@ iframe {
 
 }
 
-.socialMedia a :hover {
-    border: 1px solid white;
-    background: rgba(0, 25, 79, .6);
-    ;
-    color: white;
-}
+
 
 .bootomMenu {
     margin: 20px 0px;
@@ -573,7 +576,7 @@ p{padding:10px}
  * Change animation duration
  */
 
-/*slider css*/
+/*slider css*----------------------------------------------- */
 @import "compass/css3";
 @font-face {
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf');
@@ -750,6 +753,17 @@ svg {
 @media (max-width: 991px) {
     .slide:nth-child(4) .slide__text {
         background-color: rgba(203, 198, 195, 0.8);
+        /*background: red;*/
+    }
+}
+@media (max-width: 991px) {
+    .slide__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: -450px;
     }
 }
 .slide__content {
@@ -772,7 +786,7 @@ svg {
 }
 @media (max-width: 991px) {
     .slide__overlay {
-        display: none;
+        display:none ;
     }
 }
 .slide__overlay path {
@@ -819,7 +833,8 @@ svg {
 }
 @media (max-width: 991px) {
     .slide__text-desc {
-        display: none;
+        display: ;
+
     }
 }
 .slide__text-link {
@@ -835,6 +850,11 @@ svg {
 @media (max-width: 991px) {
     .slide__text-link {
         display: none;
+    }
+    .slide__text img{
+        height: 250px;
+        width: 250px;
+        margin: auto;
     }
 }
 .slide__text-link:before {
@@ -1299,6 +1319,7 @@ body .social .follow {
 .backContent{
 
 }
+
 .aboutCrtHeading h1{
     font-size: 50px;
     color: #333333;
@@ -1311,8 +1332,35 @@ body .social .follow {
     background: url("../img/certificate5.jpg");
     background-attachment: fixed;
     position: relative;
+    z-index: -1;
+
+}.test{
+    height: 300px;
+    width: 100%;
+    background: url("../img/test.jpg");
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
 
 }
+.faqSection{
+    height: 300px;
+    width: 100%;
+    background: url("../img/faq.png");
+    background-attachment: fixed;
+    z-index: -1;
+
+}
+
+.testSection{
+    height: 300px;
+    width: 100%;
+    background: url("../img/faq.png");
+    background-attachment: fixed;
+    z-index: -1;
+
+}
+
 
 .discussionBackground   {
     height: 300px;
@@ -1325,11 +1373,12 @@ body .social .follow {
 
 
 
-.aboutCrt, .discussonPanel{
+.aboutCrt, .discussonPanel, .faqPanel, .accsess, .accsess{
     background: white;
-    margin-top:150px ;
+    margin-top:-150px ;
     padding: 50px;
     box-shadow: 1px 2px 3px 1px #dddddd;
+    z-index: 999;
 }
 
 
@@ -1436,7 +1485,13 @@ textarea {
     box-shadow: 1px 2px 2px 1px #dddddd;
     margin: 40px 0px;
     padding: 10px;
+}.customWellTwo, .customWellThree{
+    box-shadow: 1px 2px 2px 1px #dddddd;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius:10px;
 }
+
 .formPanel{
     box-shadow: 1px 2px 3px 1px #dddddd;
     margin-top: 150px;
@@ -1489,3 +1544,106 @@ textarea {
      margin: auto;
      max-width: 80%;
  }
+ /*code for faq css ttt*/
+.faq h4 a{
+    text-decoration: none;
+    font-size:25px;
+    transition: .5s;
+}
+.rotationUp{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+.option{
+    margin: 30px;
+}
+.customWellThree h4 a{
+    font-size: 12px;
+}
+.fa-facebook {
+    padding: 15px 3px;
+}
+.switch{
+    background: #d88603;
+    border-radius: 50%;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    color: white;
+    padding: 18px 18px;
+    z-index: 10;
+
+}
+.chatPanel form{
+    max-width: 450px;
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #ddd;
+    z-index: 10;
+    display: none;
+
+}
+.chatPanel a {
+    font-size: 18px;
+    color: white;
+    z-index: 1;
+}
+.instantChat a {
+    transition: .3s;
+    color: white;
+}
+
+.instantChat a:hover {
+
+    transform: rotate(360deg);
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #d88603;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: rgba(216,134,3,.6);;
+}
+.dropdown-menu {
+
+    border:none;
+    border: none;
+    border-radius: 0px;
+
+}
+
+.change::before{
+    content: 'Hide ';
+}
+
+
+/*Media query for perfect responsiveness*/
+@media screen and (max-width: 1086px) {
+    .nextEvent li span {
+        display: block;
+        font-size: 2rem;
+    }
+    .nextEvent li  {
+        font-size: 1.8rem;
+    }
+
+}
+@media screen and (max-width: 772px) {
+
+    .timeline-top{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+
+   .slide_text img{
+       height: 350px;
+       width: 350px;
+   }
+}
