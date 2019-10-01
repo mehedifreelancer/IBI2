@@ -1586,6 +1586,7 @@ textarea {
     color: white;
     padding: 18px 18px;
     z-index: 10;
+    display:none;
 
 }
 .chatPanel form{
