@@ -710,6 +710,9 @@ svg {
 @media (max-width: 991px) {
     .slide:nth-child(1) .slide__text {
         background-color: rgba(233, 156, 126, 0.8);
+        background-color: transparent;
+
+
     }
 }
 .slide:nth-child(2) {
@@ -725,6 +728,7 @@ svg {
 @media (max-width: 991px) {
     .slide:nth-child(2) .slide__text {
         background-color: rgba(225, 204, 174, 0.8);
+        background: transparent;
     }
 }
 .slide:nth-child(3) {
@@ -740,6 +744,7 @@ svg {
 @media (max-width: 991px) {
     .slide:nth-child(3) .slide__text {
         background-color: rgba(173, 197, 205, 0.8);
+        background: transparent;
     }
 }
 .slide:nth-child(4) {
@@ -756,6 +761,7 @@ svg {
     .slide:nth-child(4) .slide__text {
         background-color: rgba(203, 198, 195, 0.8);
         /*background: red;*/
+        background: transparent;
     }
 }
 @media (max-width: 991px) {
@@ -1603,6 +1609,8 @@ textarea {
 .instantChat a {
     transition: .3s;
     color: white;
+    z-index: 5000;
+    border:1px solid #00194f;
 }
 
 .instantChat a:hover {
@@ -1658,4 +1666,13 @@ textarea {
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: white;
     background-color: #d88603;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d88603;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: rgba(216,134,3,.3);
+}
+.navbar-default .navbar-toggle {
+    border-color: #d88603;
 }
