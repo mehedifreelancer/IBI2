@@ -577,6 +577,9 @@ p{padding:10px}
  */
 
 /*slider css*----------------------------------------------- */
+#Home{
+    overflow: hidden;
+}
 @import "compass/css3";
 @font-face {
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf');
