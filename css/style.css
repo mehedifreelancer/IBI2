@@ -189,6 +189,9 @@ iframe {
     margin-top: 40px;
     margin-bottom: 0px;
 }
+.aboutElemnt img{
+    z-index: -1;
+}
 
 .youtube{
 
@@ -585,11 +588,7 @@ p{padding:10px}
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf');
     font-family: 'Polar';
 }
-*, *:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 html, body {
     height: 100%;
 
@@ -858,6 +857,10 @@ svg {
         height: 250px;
         width: 250px;
         margin: auto;
+        margin-top: 150px;
+    }
+    .slide__text p{
+        font-size: 15px;
     }
 }
 .slide__text-link:before {
@@ -1387,6 +1390,7 @@ body .social .follow {
 
 .navbar{
     margin-bottom: 0px;
+    z-index: 1000;
 }
 .discussionText h2, .aboutCertificate h2{
     font-size: 25px;
@@ -1540,6 +1544,7 @@ textarea {
  }
  .modaImage img{
      height: 100%;
+
      width: 100%;
      object-fit: contain;
  }
@@ -1609,9 +1614,9 @@ textarea {
     background-color: #d88603;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #262626;
+    color: white;
     text-decoration: none;
-    background-color: rgba(216,134,3,.6);;
+    background-color: #d88603;
 }
 .dropdown-menu {
 
@@ -1649,4 +1654,8 @@ textarea {
        height: 350px;
        width: 350px;
    }
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: white;
+    background-color: #d88603;
 }
