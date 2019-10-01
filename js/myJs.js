@@ -182,35 +182,29 @@
      })
  });
 
-//Code for count down 
-const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+ //Script code for countdown
+ const second = 1000,
+     minute = second * 60,
+     hour = minute * 60,
+     day = hour * 24;
 
-    let countDown = new Date('Oct 5, 2019 00:00:00').getTime(),
-        x = setInterval(function() {
+ let countDown = new Date('Oct 5, 2019 00:00:00').getTime(),
+     x = setInterval(function() {
 
-            let now = new Date().getTime(),
-                distance = countDown - now;
+         let now = new Date().getTime(),
+             distance = countDown - now;
 
-            document.getElementById('days').innerText = Math.floor(distance / (day)),
-                document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+         document.getElementById('days').innerText = Math.floor(distance / (day)),
+             document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+             document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
-            //do something later when date is reached
-            //if (distance < 0) {
-            //  clearInterval(x);
-            //  'IT'S MY BIRTHDAY!;
-            //}
+         //do something later when date is reached
+         //if (distance < 0) {
+         //  clearInterval(x);
+         //  'IT'S MY BIRTHDAY!;
+         //}
 
-        }, second);
+     }, second);
 
 
- // Bootsrap dropdown on hover
- $('ul.nav li.dropdown').hover(function() {
-     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
- }, function() {
-     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
- });
