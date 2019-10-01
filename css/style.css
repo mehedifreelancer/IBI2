@@ -1605,6 +1605,7 @@ textarea {
     font-size: 18px;
     color: white;
     z-index: 1;
+    display:none;
 }
 .instantChat a {
     transition: .3s;
