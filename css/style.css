@@ -1698,3 +1698,22 @@ textarea {
         color: #dddddd;
     }
 }
+
+@media screen and (max-width: 830px) {
+
+.ansBtnTop{
+    display: none;
+}
+    .ansBtnBottom{
+        display:block ;
+    }
+}
+@media screen and (min-width: 830px) {
+
+    .ansBtnTop{
+        display: block;
+    }
+    .ansBtnBottom{
+        display:none ;
+    }
+}
